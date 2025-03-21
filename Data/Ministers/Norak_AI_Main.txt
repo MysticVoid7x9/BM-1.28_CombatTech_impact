@@ -1,0 +1,20 @@
+=======================================================================================
+AI MAIN DATA FILE - Norak - Captain Kwok's Balance Mod v125+
+=======================================================================================
+
+=======================================================================================
+*BEGIN*
+=======================================================================================
+
+Minister Style Name                           := Norak
+AI Script File                                := Norak\Norak_Main_Script.csf
+AI Script Empire Setup File                   := Norak\Norak_Setup_Script.csf
+AI General File                               := Norak\Norak_AI_General.txt
+AI Ministers File                             := Default\Default_AI_Ministers.txt
+AI Speech File                                := Norak\Norak_AI_Speech.txt
+AI Strategies File                            := Default\Default_AI_Strategies.txt
+AI Warp Transit Types File                    := Default\Default_AI_WarpTransitTypes.txt
+
+=======================================================================================
+*END*
+=======================================================================================

@@ -1,0 +1,20 @@
+=======================================================================================
+AI MAIN DATA FILE - Ukratal - Captain Kwok's Balance Mod v125+
+=======================================================================================
+
+=======================================================================================
+*BEGIN*
+=======================================================================================
+
+Minister Style Name                           := Ukratal
+AI Script File                                := Ukratal\Ukratal_Main_Script.csf
+AI Script Empire Setup File                   := Ukratal\Ukratal_Setup_Script.csf
+AI General File                               := Ukratal\Ukratal_AI_General.txt
+AI Ministers File                             := Default\Default_AI_Ministers.txt
+AI Speech File                                := Ukratal\Ukratal_AI_Speech.txt
+AI Strategies File                            := Default\Default_AI_Strategies.txt
+AI Warp Transit Types File                    := Default\Default_AI_WarpTransitTypes.txt
+
+=======================================================================================
+*END*
+=======================================================================================

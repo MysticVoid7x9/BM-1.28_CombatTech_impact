@@ -1,0 +1,20 @@
+=======================================================================================
+AI MAIN DATA FILE - EEE - Captain Kwok's Balance Mod v125+
+=======================================================================================
+
+=======================================================================================
+*BEGIN*
+=======================================================================================
+
+Minister Style Name                           := EEE
+AI Script File                                := EEE\EEE_Main_Script.csf
+AI Script Empire Setup File                   := EEE\EEE_Setup_Script.csf
+AI General File                               := EEE\EEE_AI_General.txt
+AI Ministers File                             := Default\Default_AI_Ministers.txt
+AI Speech File                                := EEE\EEE_AI_Speech.txt
+AI Strategies File                            := Default\Default_AI_Strategies.txt
+AI Warp Transit Types File                    := Default\Default_AI_WarpTransitTypes.txt
+
+=======================================================================================
+*END*
+=======================================================================================

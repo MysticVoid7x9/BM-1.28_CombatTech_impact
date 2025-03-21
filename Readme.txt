@@ -1,0 +1,1 @@
+To install just copy these files over top of a copy of Balance Mod 1.28

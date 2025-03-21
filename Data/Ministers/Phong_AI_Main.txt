@@ -1,0 +1,20 @@
+=======================================================================================
+AI MAIN DATA FILE - Phong - Captain Kwok's Balance Mod v125+
+=======================================================================================
+
+=======================================================================================
+*BEGIN*
+=======================================================================================
+
+Minister Style Name                           := Phong
+AI Script File                                := Phong\Phong_Main_Script.csf
+AI Script Empire Setup File                   := Phong\Phong_Setup_Script.csf
+AI General File                               := Phong\Phong_AI_General.txt
+AI Ministers File                             := Default\Default_AI_Ministers.txt
+AI Speech File                                := Phong\Phong_AI_Speech.txt
+AI Strategies File                            := Default\Default_AI_Strategies.txt
+AI Warp Transit Types File                    := Default\Default_AI_WarpTransitTypes.txt
+
+=======================================================================================
+*END*
+=======================================================================================

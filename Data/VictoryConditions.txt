@@ -1,0 +1,103 @@
+=======================================================================================
+VICTORY CONDITIONS DATA FILE - Captain Kwok's Balance Mod
+=======================================================================================
+
+Each requirement is evaluated for each empire. If the empire satisfies all requirements, 
+then the game is over. 
+
+=======================================================================================
+*BEGIN*
+=======================================================================================
+
+Name                                            := Highest Score
+Number Of Requirements                          := 2
+Requirements Evaluation Availability            := TRUE
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := AND 
+Requirement 1 Description                       := First player to reach a score of at least 2,000,000.
+Requirement 1 Formula                           := Get_Empire_Score([%PlayerNumber%]) >= 2000000
+Requirement 2 Description                       := Victory Condition only applies to human players.
+Requirement 2 Formula                           := Empire_Is_Human_Controlled([%PlayerNumber%])
+
+Name                                            := Highest Percentage Score
+Number Of Requirements                          := 3
+Requirements Evaluation Availability            := TRUE
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := AND 
+Requirement 1 Description                       := First player to reach a score that is 200% of the second highest player.
+Requirement 1 Formula                           := Get_Player_Percent_Score_Of_Next_Highest_Player([%PlayerNumber%]) >= 200
+Requirement 2 Description                       := Victory Condition doesn't start until year 2402.
+Requirement 2 Formula                           := Get_Game_Date() >= 24020
+Requirement 3 Description                       := Victory Condition only applies to human players.
+Requirement 3 Formula                           := Empire_Is_Human_Controlled([%PlayerNumber%])
+
+Name                                            := Highest Technology
+Number Of Requirements                          := 1
+Requirements Evaluation Availability            := TRUE
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := AND 
+Requirement 1 Description                       := First player to research at least 80% of the entire technology tree.
+Requirement 1 Formula                           := Get_Empire_Percent_Of_Entire_Tech_Tree_Researched([%PlayerNumber%]) >= 80
+
+Name                                            := Peace Throughout The Quadrant
+Number Of Requirements                          := 1
+Requirements Evaluation Availability            := TRUE
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := AND 
+Requirement 1 Description                       := All players at peace for at least 10 years.
+Requirement 1 Formula                           := Get_Number_Of_Years_Of_Peace() >= 10
+
+Name                                            := Massive Expansion
+Number Of Requirements                          := 1
+Requirements Evaluation Availability            := TRUE
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := AND 
+Requirement 1 Description                       := First player to colonize over 50% of the systems in the quadrant.
+Requirement 1 Formula                           := Get_Empire_Colonized_Percent_Of_Map([%PlayerNumber%]) >= 50
+
+Name                                            := Destroy All Homeworlds
+Number Of Requirements                          := 2
+Requirements Evaluation Availability            := TRUE
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := AND 
+Requirement 1 Description                       := Only empire that still owns one of its starting homeworlds.
+Requirement 1 Formula                           := (Get_Number_Of_Empires_Homeworlds([%PlayerNumber%]) >= 1) AND (Get_Number_Of_Other_Empires_Homeworlds([%PlayerNumber%]) = 0)
+Requirement 2 Description                       := Victory Condition only applies to human players.
+Requirement 2 Formula                           := Empire_Is_Human_Controlled([%PlayerNumber%])
+
+Name                                            := Sole Survivor
+Number Of Requirements                          := 1
+Requirements Evaluation Availability            := TRUE
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := AND 
+Requirement 1 Description                       := Last full empire left in the quadrant (not counting neutral empires).
+Requirement 1 Formula                           := Get_Number_Of_Full_Empires() <= 1
+
+Name                                            := Time Elapsed (10 years)
+Number Of Requirements                          := 1
+Requirements Evaluation Availability            := TRUE
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := AND 
+Requirement 1 Description                       := 10 years have elapsed since the start of the game.
+Requirement 1 Formula                           := Get_Game_Date() >= 24100
+
+Name                                            := Time Elapsed (50 years)
+Number Of Requirements                          := 1
+Requirements Evaluation Availability            := TRUE
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := AND 
+Requirement 1 Description                       := 50 years have elapsed since the start of the game.
+Requirement 1 Formula                           := Get_Game_Date() >= 24500
+
+Name                                            := Time Elapsed (100 years)
+Number Of Requirements                          := 1
+Requirements Evaluation Availability            := TRUE
+Requirements Evaluation Allows Placement        := TRUE
+Requirements Evaluation Allows Usage            := AND 
+Requirement 1 Description                       := 100 years have elapsed since the start of the game.
+Requirement 1 Formula                           := Get_Game_Date() >= 25000
+
+=======================================================================================
+*END*
+=======================================================================================
+

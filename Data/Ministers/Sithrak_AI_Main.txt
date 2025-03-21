@@ -1,0 +1,20 @@
+=======================================================================================
+AI MAIN DATA FILE - Sithrak - Captain Kwok's Balance Mod v125+
+=======================================================================================
+
+=======================================================================================
+*BEGIN*
+=======================================================================================
+
+Minister Style Name                           := Sithrak
+AI Script File                                := Sithrak\Sithrak_Main_Script.csf
+AI Script Empire Setup File                   := Sithrak\Sithrak_Setup_Script.csf
+AI General File                               := Sithrak\Sithrak_AI_General.txt
+AI Ministers File                             := Default\Default_AI_Ministers.txt
+AI Speech File                                := Sithrak\Sithrak_AI_Speech.txt
+AI Strategies File                            := Default\Default_AI_Strategies.txt
+AI Warp Transit Types File                    := Default\Default_AI_WarpTransitTypes.txt
+
+=======================================================================================
+*END*
+=======================================================================================

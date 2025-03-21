@@ -1,0 +1,20 @@
+=======================================================================================
+AI MAIN DATA FILE - Abbidon - Captain Kwok's Balance Mod v125+
+=======================================================================================
+
+=======================================================================================
+*BEGIN*
+=======================================================================================
+
+Minister Style Name                           := Abbidon
+AI Script File                                := Abbidon\Abbidon_Main_Script.csf
+AI Script Empire Setup File                   := Abbidon\Abbidon_Setup_Script.csf
+AI General File                               := Abbidon\Abbidon_AI_General.txt
+AI Ministers File                             := Default\Default_AI_Ministers.txt
+AI Speech File                                := Abbidon\Abbidon_AI_Speech.txt
+AI Strategies File                            := Default\Default_AI_Strategies.txt
+AI Warp Transit Types File                    := Default\Default_AI_WarpTransitTypes.txt
+
+=======================================================================================
+*END*
+=======================================================================================

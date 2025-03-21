@@ -2889,14 +2889,12 @@ Can Be Placed In Ship Sections                  := Inner Hull, Outer Hull
 Component Type List                             := Technological
 General Group                                   := Construction
 Custom Group                                    := 0
-Number Of Requirements                          := 2
+Number Of Requirements                          := 1
 Requirements Evaluation Availability            := 1
-Requirements Evaluation Allows Placement        := 2
+Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Empire must have at least tech level 1 in Space Yards.
 Requirement 1 Formula                           := Get_Empire_Tech_Level("Space Yards") >= [%Level%]
-Requirement 2 Description                       := There is a limit of one Space Yard per vehicle.
-Requirement 2 Formula                           := Get_Design_Specific_Component_Count("Space Yard") + Get_Design_Specific_Component_Count("Temporal Space Yard") <= 1
 Number Of Abilities                             := 7
 Ability 1 Type                                  := Space Yard
 Ability 1 Description                           := Space Yard constructs with [%Amount2%] minerals per turn.
@@ -2958,14 +2956,12 @@ Can Be Placed In Ship Sections                  := Inner Hull, Outer Hull
 Component Type List                             := Technological
 General Group                                   := Construction
 Custom Group                                    := 0
-Number Of Requirements                          := 2
+Number Of Requirements                          := 1
 Requirements Evaluation Availability            := 1
-Requirements Evaluation Allows Placement        := 2
+Requirements Evaluation Allows Placement        := TRUE
 Requirements Evaluation Allows Usage            := TRUE
 Requirement 1 Description                       := Empire must have at least tech level 10 in Temporal Technology.
 Requirement 1 Formula                           := Get_Empire_Tech_Level("Temporal Technology") >= 10 + ([%Level%] - 1)
-Requirement 2 Description                       := There is a limit of one Space Yard per vehicle.
-Requirement 2 Formula                           := Get_Design_Specific_Component_Count("Space Yard") + Get_Design_Specific_Component_Count("Temporal Space Yard") <= 1
 Number Of Abilities                             := 7
 Ability 1 Type                                  := Space Yard
 Ability 1 Description                           := Temporal Space Yard constructs with [%Amount2%] minerals per turn.
@@ -3111,9 +3107,6 @@ Ability 4 Amount 1 Formula                      := 0
 Ability 4 Amount 2 Formula                      := 0
 Weapon Type                                     := None
 
-//-------------------------------------------------------------------------------------
-// Medical
-//-------------------------------------------------------------------------------------
 Name                                            := Medical Bay
 Description                                     := Medical bay that can cure plagues on planets.
 Picture Number                                  := 32
@@ -3146,7 +3139,7 @@ Ability 1 Amount 2 Formula                      := 0
 Weapon Type                                     := None
 
 //-------------------------------------------------------------------------------------
-// Cargo and Unit Launching
+// Medical
 //-------------------------------------------------------------------------------------
 Name                                            := Cargo Bay
 Description                                     := Area on a ship where cargo is stored.
@@ -3179,6 +3172,9 @@ Ability 1 Amount 1 Formula                      := 100 + (([%Level%] - 1) * 100)
 Ability 1 Amount 2 Formula                      := 0
 Weapon Type                                     := None
 
+//-------------------------------------------------------------------------------------
+// Cargo and Unit Launching
+//-------------------------------------------------------------------------------------
 Name                                            := Fighter Launcher
 Description                                     := Compartment on a ship that launches and recovers fighters in space.
 Picture Number                                  := 22
@@ -3394,9 +3390,6 @@ Ability 2 Amount 1 Formula                      := 0
 Ability 2 Amount 2 Formula                      := 0
 Weapon Type                                     := None
 
-//-------------------------------------------------------------------------------------
-// Remote Mining
-//-------------------------------------------------------------------------------------
 Name                                            := Robo-Miners
 Description                                     := Small autonomous robots that mine asteroids or empty planets but decreases their value permanently.
 Picture Number                                  := 39
@@ -3446,6 +3439,9 @@ Ability 4 Amount 1 Formula                      := 0
 Ability 4 Amount 2 Formula                      := 0
 Weapon Type                                     := None
 
+//-------------------------------------------------------------------------------------
+// Remote Mining
+//-------------------------------------------------------------------------------------
 Name                                            := Robo-Farmers
 Description                                     := Small autonomous robots that farm asteroids or empty planets but decreases their value permanently.
 Picture Number                                  := 40
@@ -3544,9 +3540,6 @@ Ability 4 Amount 1 Formula                      := 0
 Ability 4 Amount 2 Formula                      := 0
 Weapon Type                                     := None
 
-//-------------------------------------------------------------------------------------
-// Boarding
-//-------------------------------------------------------------------------------------
 Name                                            := Boarding Parties
 Description                                     := Combat personnel trained to board enemy ships and capture them.
 Picture Number                                  := 111
@@ -3590,6 +3583,9 @@ Ability 3 Amount 1 Formula                      := 0
 Ability 3 Amount 2 Formula                      := 0
 Weapon Type                                     := None
 
+//-------------------------------------------------------------------------------------
+// Boarding
+//-------------------------------------------------------------------------------------
 Name                                            := Security Station
 Description                                     := Defensive installations designed to prevent ship capture by boarding parties.
 Picture Number                                  := 112
@@ -3627,9 +3623,6 @@ Ability 2 Amount 1 Formula                      := 0
 Ability 2 Amount 2 Formula                      := 0
 Weapon Type                                     := None
 
-//-------------------------------------------------------------------------------------
-// Small Components
-//-------------------------------------------------------------------------------------
 Name                                            := Fighter Cockpit
 Description                                     := The control center of a fighter.
 Picture Number                                  := 54
@@ -3661,6 +3654,9 @@ Ability 1 Amount 1 Formula                      := 0
 Ability 1 Amount 2 Formula                      := 0
 Weapon Type                                     := None
 
+//-------------------------------------------------------------------------------------
+// Small Components
+//-------------------------------------------------------------------------------------
 Name                                            := Troop Cockpit
 Description                                     := The control center of a troop vehicle.
 Picture Number                                  := 56
@@ -4627,9 +4623,6 @@ Ability 2 Amount 1 Formula                      := 0
 Ability 2 Amount 2 Formula                      := 0
 Weapon Type                                     := None
 
-//-------------------------------------------------------------------------------------
-// Crystalline Weapons
-//-------------------------------------------------------------------------------------
 Name                                            := Shard Cannon
 Description                                     := Super dense crystal projectiles fired by a polarized cannon. These projectiles cannot be stopped by armor.
 Picture Number                                  := 122
@@ -4680,6 +4673,9 @@ Weapon Explosion Effect Name                    := [Random Specific Type] Weapon
 Weapon Sound Effect Name                        := Shard Cannon
 Weapon Bolt Speed                               := 0.1
 
+//-------------------------------------------------------------------------------------
+// Crystalline Weapons
+//-------------------------------------------------------------------------------------
 Name                                            := Crystalline Torpedo
 Description                                     := Hardened crystal projectile that will seek and explode against an enemy target.
 Picture Number                                  := 132
@@ -4876,9 +4872,6 @@ Weapon Beam Burn Color                          := 252, 10, 249
 Weapon Beam Duration                            := 2000
 Weapon Beam Speed                               := 0.05
 
-//-------------------------------------------------------------------------------------
-// Interdimensional Weapons
-//-------------------------------------------------------------------------------------
 Name                                            := Phase Disruptor
 Description                                     := Energy beam that disrupts the fabric of space around the target.
 Picture Number                                  := 210
@@ -4931,6 +4924,9 @@ Weapon Beam Burn Color                          := 252, 234, 0
 Weapon Beam Duration                            := 1500
 Weapon Beam Speed                               := 0.05
 
+//-------------------------------------------------------------------------------------
+// Interdimensional Weapons
+//-------------------------------------------------------------------------------------
 Name                                            := Superluminal Darts
 Description                                     := Small fast moving quantum tunneling projectiles that destroy small targets through kinetic impact.
 Picture Number                                  := 216
@@ -5230,9 +5226,6 @@ Weapon Sound Effect Name                        := None
 Weapon Beam Burn Color                          := 110, 177, 240
 Weapon Beam Duration                            := 1000
 
-//-------------------------------------------------------------------------------------
-// Organic Weapons
-//-------------------------------------------------------------------------------------
 Name                                            := Electric Discharge
 Description                                     := Discharge of electrical energy focused at a target.
 Picture Number                                  := 117
@@ -5285,6 +5278,9 @@ Weapon Beam Burn Color                          := 202, 250, 176
 Weapon Beam Duration                            := 1000
 Weapon Beam Speed                               := 0.05
 
+//-------------------------------------------------------------------------------------
+// Organic Weapons
+//-------------------------------------------------------------------------------------
 Name                                            := Lightning Ray
 Description                                     := Intense discharge of electricity focused at a target.
 Picture Number                                  := 118
@@ -5699,9 +5695,6 @@ Weapon Explosion Effect Name                    := [Random Specific Type] Weapon
 Weapon Sound Effect Name                        := Hyperdense Globule
 Weapon Bolt Speed                               := 0.1
 
-//-------------------------------------------------------------------------------------
-// Psychic Weapons
-//-------------------------------------------------------------------------------------
 Name                                            := Telekinetic Projector
 Description                                     := Projects a battering ram of telekinetic force against its target.
 Picture Number                                  := 126
@@ -5748,6 +5741,9 @@ Weapon Explosion Effect Name                    := [Random Specific Type] Weapon
 Weapon Sound Effect Name                        := Telekinetic Projector
 Weapon Bolt Speed                               := 0.1
 
+//-------------------------------------------------------------------------------------
+// Psychic Weapons
+//-------------------------------------------------------------------------------------
 Name                                            := Stupifier
 Description                                     := Psychic attack that temporarily decreases the intelligence of the target crew.
 Picture Number                                  := 170
@@ -6010,9 +6006,6 @@ Weapon Explosion Effect Name                    := [Random Specific Type] Weapon
 Weapon Sound Effect Name                        := Mental Singularity Generator
 Weapon Bolt Speed                               := 0.1
 
-//-------------------------------------------------------------------------------------
-// Temporal Weapons
-//-------------------------------------------------------------------------------------
 Name                                            := Time Distortion Burst
 Description                                     := A projected burst of distorted time. A vehicle hit will take 4x damage to shields plus normal damage.
 Picture Number                                  := 124
@@ -6057,6 +6050,9 @@ Weapon Explosion Effect Name                    := [Random Specific Type] Weapon
 Weapon Sound Effect Name                        := Time Distortion Burst
 Weapon Bolt Speed                               := 0.1
 
+//-------------------------------------------------------------------------------------
+// Temporal Weapons
+//-------------------------------------------------------------------------------------
 Name                                            := Alloy Burner Missile
 Description                                     := High velocity missile that degrades the armor of the target ship by subjecting it to temporal acceleration.
 Picture Number                                  := 187
@@ -6310,9 +6306,6 @@ Weapon Explosion Effect Name                    := [Random Specific Type] Weapon
 Weapon Sound Effect Name                        := Temporal Shifter
 Weapon Bolt Speed                               := 0.1
 
-//-------------------------------------------------------------------------------------
-// Ship and Base Weapons
-//-------------------------------------------------------------------------------------
 Name                                            := Depleted Uranium Cannon
 Description                                     := Cannon that fires large depleted uranium projectiles.
 Picture Number                                  := 114
@@ -6361,6 +6354,9 @@ Weapon Explosion Effect Name                    := [Random Specific Type] Weapon
 Weapon Sound Effect Name                        := Depleted Uranium Cannon
 Weapon Bolt Speed                               := 0.1
 
+//-------------------------------------------------------------------------------------
+// Ship and Base Weapons
+//-------------------------------------------------------------------------------------
 Name                                            := X-Ray Laser
 Description                                     := Directed energy weapon firing a beam of X-ray radiation.
 Picture Number                                  := 205
@@ -8513,9 +8509,6 @@ Weapon Explosion Effect Name                    := [Random Specific Type] Weapon
 Weapon Sound Effect Name                        := Smart Bomb
 Weapon Bolt Speed                               := 0.05
 
-//-------------------------------------------------------------------------------------
-// Unit Weapons
-//-------------------------------------------------------------------------------------
 Name                                            := Small Shard Cannon
 Description                                     := Super dense crystal projectiles fired by a polarized cannon. These projectiles cannot be stopped by armor.
 Picture Number                                  := 148
@@ -8575,6 +8568,9 @@ Weapon Explosion Effect Name                    := [Random Specific Type] Weapon
 Weapon Sound Effect Name                        := Small Shard Cannon
 Weapon Bolt Speed                               := 0.1
 
+//-------------------------------------------------------------------------------------
+// Unit Weapons
+//-------------------------------------------------------------------------------------
 Name                                            := Small Crystalline Torpedo
 Description                                     := Small hardened crystal projectile that will seek and explode against an enemy target.
 Picture Number                                  := 254
@@ -10144,9 +10140,6 @@ Weapon Explosion Effect Name                    := [Random Specific Type] Weapon
 Weapon Sound Effect Name                        := Small Rocket Pods
 Weapon Bolt Speed                               := 0.05
 
-//-------------------------------------------------------------------------------------
-// Warheads
-//-------------------------------------------------------------------------------------
 Name                                            := Cobalt Warhead
 Description                                     := Large warhead that explodes if the ship rams another ship.
 Picture Number                                  := 129
@@ -10190,6 +10183,9 @@ Weapon Sound Effect Name                        := None
 Weapon Beam Burn Color                          := 110, 177, 240
 Weapon Beam Duration                            := 1000
 
+//-------------------------------------------------------------------------------------
+// Warheads
+//-------------------------------------------------------------------------------------
 Name                                            := Kamikaze Warhead
 Description                                     := Small cobalt warhead that will explode when a fighter rams another vehicle.
 Picture Number                                  := 145
@@ -10428,9 +10424,6 @@ Weapon Sound Effect Name                        := None
 Weapon Beam Burn Color                          := 110, 177, 240
 Weapon Beam Duration                            := 1000
 
-//-------------------------------------------------------------------------------------
-// Stellar Manipulation Components
-//-------------------------------------------------------------------------------------
 Name                                            := Ionic Concussion Blaster
 Description                                     := Ionic concussion blasts that stir up storm activity in a sector.
 Picture Number                                  := 77
@@ -10468,6 +10461,9 @@ Ability 2 Amount 1 Formula                      := 0
 Ability 2 Amount 2 Formula                      := 0
 Weapon Type                                     := None
 
+//-------------------------------------------------------------------------------------
+// Stellar Manipulation Components
+//-------------------------------------------------------------------------------------
 Name                                            := Beta Displacement Pulser
 Description                                     := Displacement beta pulses that dissipate storm activity.
 Picture Number                                  := 76
